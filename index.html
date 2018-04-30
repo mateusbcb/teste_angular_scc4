@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Teste Desenvolvedor - SCC4 | Mateus Brandt</title>
+	
+	<!-- Arquivos CSS -->
+	<link href="css/estilo.css" rel="stylesheet">
+	
+  </head>
+  
+  <body>
+	<form name="cadastro" id="frm1" method="post" action="cadastro.php">
+		<div class="container">
+			<span id="titulo">Dados</span>
+			<div id="dados1">
+				<ul>
+					<li><label from="tipo">Tipo</label></li>
+					<li class="radio"><input type="radio" name="tipo" value="cpf" checked />CPF</li>
+					<li class="radio"><input type="radio" name="tipo" value="cnpj"/>CNPJ</li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="genero">Genero</label></li>
+					<li class="radio"><input type="radio" name="genero" value="masculino" checked />Masculino</li>
+					<li class="radio"><input type="radio" name="genero" value="feminino"/>Feminino</li>
+				</ul>
+				<br>
+			</div>
+			<div id="dados2">
+				<ul>
+					<li><label from="nome">Nome</label></li>
+					<li class="campo"><input type="text" id="nome" name="nome" placeholder="Nome*" required /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="nome">E-mail</label></li>
+					<li class="campo"><input type="email" id="email" name="email" placeholder="E-mail*" required /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="cpf">CPF</label></li>
+					<li class="campo"><input type="text" id="cpf" name="cpf" placeholder="CPF*" required /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="endereco">Endereço</label></li>
+					<li class="campo"><input type="text" id="endereco" name="endereco" placeholder="endereço" /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="rg">RG</label></li>
+					<li class="campo"><input type="text" id="rg" name="rg" placeholder="RG" /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="celular">Celular</label></li>
+					<li class="campo"><input type="tel" id="celular" name="celular" placeholder="Celular" /></li>
+				</ul>
+				<br>
+				<ul>
+					<li><label from="telefone">Telefone</label></li>
+					<li class="campo"><input type="tel" id="telefone" name="telefone" placeholder="Telefone" /></li>
+				</ul>
+				<br>
+				<ul>
+					<span>Campos obrigatórios *</span>
+					<br>
+					<li><input id="botao" type="reset" value="Cancelar"></li>
+					<li><input id="botao" class="salvar" type="submit" onclick="myFunction()" value="Salvar"></li>
+				</ul>
+			</div>	
+		</div>
+	</form>
+	<!-- Arquivos Java Script -->
+	<!-- jquery mask -->
+	<script src="js/jquery/jquery.mask.js"></script>
+  </body>
+</html>
